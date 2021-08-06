@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo Test Cases">
+	<listeners>
+		<listener class-name ="com.celonis.qa.utils.AllureReportListener"/>
+	</listeners>
+ 	<test name="Login tests">
+	<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="com.celonis.qa.tests.LoginTest" />
+		</classes>
+	</test>
+	<test name="Analysis tests">
+	<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="com.celonis.qa.tests.DemoAnalysisTest" />
+		</classes>
+	</test>
+</suite>
